@@ -44,7 +44,7 @@ export default function BudgetCard({
             variant={getProgressBarVariant(amount, max)}
             min={0}
             max={max}
-            now={amount}
+            now={max - amount}
           />
         )}
         {!hideButtons && (
